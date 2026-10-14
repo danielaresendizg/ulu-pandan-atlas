@@ -1,0 +1,1792 @@
+{
+  "metadata": {
+    "title": "Multi-station rainfall hazard screen",
+    "station_order": [
+      "S35",
+      "S50",
+      "S201",
+      "S903",
+      "S904"
+    ],
+    "selection": "Storms with at least two stations at high or very-high station-specific intensity.",
+    "method": "Each station event is ranked against its own complete event history (S903 and S904, with under a year of record, against S50). This is a rainfall-hazard screen, not a record of confirmed flooding.",
+    "class_definition": "Elevated: P90\u2013P95; high: P95\u2013P99; very high: at least P99, or P95 with antecedent rainfall at least P90.",
+    "coverage_note": "Reporting stations grow from 2 (2017\u20132019) to 5 (from May 2026); the denominator is shown for every storm, so counts are not comparable across years."
+  },
+  "events": [
+    {
+      "storm_id": "1859",
+      "start": "2026-09-27T11:15:00+08:00",
+      "end": "2026-09-27T16:45:00+08:00",
+      "stations_reporting": 5,
+      "n_stations_elevated": 5,
+      "n_stations_high": 5,
+      "n_stations_extreme": 5,
+      "max_h_intensity": 1.0,
+      "max_h_antecedent": 0.462,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.462,
+          "max_30min_mm": 51.8,
+          "max_60min_mm": 70.2,
+          "prior_24h_mm": 0.4
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 1.0,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 73.4,
+          "max_60min_mm": 104.4,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 1.0,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 60.4,
+          "max_60min_mm": 87.2,
+          "prior_24h_mm": 0.0
+        },
+        "S903": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 59.4,
+          "max_60min_mm": 77.6,
+          "prior_24h_mm": 0.0
+        },
+        "S904": {
+          "hazard_class": "Very high",
+          "h_intensity": 1.0,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 68.8,
+          "max_60min_mm": 107.2,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1858",
+      "start": "2026-09-22T13:05:00+08:00",
+      "end": "2026-09-22T19:35:00+08:00",
+      "stations_reporting": 5,
+      "n_stations_elevated": 5,
+      "n_stations_high": 5,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.908,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.987,
+          "h_antecedent": 0.868,
+          "max_30min_mm": 29.8,
+          "max_60min_mm": 41.6,
+          "prior_24h_mm": 18.4
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.988,
+          "h_antecedent": 0.887,
+          "max_30min_mm": 41.0,
+          "max_60min_mm": 59.0,
+          "prior_24h_mm": 20.2
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.995,
+          "h_antecedent": 0.908,
+          "max_30min_mm": 39.8,
+          "max_60min_mm": 55.8,
+          "prior_24h_mm": 29.0
+        },
+        "S903": {
+          "hazard_class": "High",
+          "h_intensity": 0.982,
+          "h_antecedent": 0.893,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 54.8,
+          "prior_24h_mm": 21.4
+        },
+        "S904": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.889,
+          "max_30min_mm": 51.0,
+          "max_60min_mm": 76.6,
+          "prior_24h_mm": 20.8
+        }
+      }
+    },
+    {
+      "storm_id": "1826",
+      "start": "2026-06-24T07:00:00+08:00",
+      "end": "2026-06-24T08:30:00+08:00",
+      "stations_reporting": 5,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.993,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.993,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 49.6,
+          "max_60min_mm": 59.2,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.712,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 14.8,
+          "max_60min_mm": 17.6,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.954,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 34.2,
+          "max_60min_mm": 37.8,
+          "prior_24h_mm": 0.0
+        },
+        "S903": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.816,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 18.0,
+          "max_60min_mm": 22.4,
+          "prior_24h_mm": 0.0
+        },
+        "S904": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.643,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 10.6,
+          "max_60min_mm": 12.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1773",
+      "start": "2026-03-06T16:40:00+08:00",
+      "end": "2026-03-06T19:40:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.974,
+      "max_h_antecedent": 0.708,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.969,
+          "h_antecedent": 0.529,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 37.0,
+          "prior_24h_mm": 1.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.962,
+          "h_antecedent": 0.708,
+          "max_30min_mm": 21.4,
+          "max_60min_mm": 30.6,
+          "prior_24h_mm": 5.8
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.974,
+          "h_antecedent": 0.579,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 44.0,
+          "prior_24h_mm": 2.4
+        }
+      }
+    },
+    {
+      "storm_id": "1761",
+      "start": "2026-02-19T14:05:00+08:00",
+      "end": "2026-02-19T20:25:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.986,
+      "max_h_antecedent": 1.0,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.986,
+          "h_antecedent": 1.0,
+          "max_30min_mm": 37.0,
+          "max_60min_mm": 64.0,
+          "prior_24h_mm": 114.2
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.996,
+          "max_30min_mm": 29.2,
+          "max_60min_mm": 49.8,
+          "prior_24h_mm": 90.2
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.956,
+          "h_antecedent": 0.998,
+          "max_30min_mm": 27.0,
+          "max_60min_mm": 53.2,
+          "prior_24h_mm": 101.4
+        }
+      }
+    },
+    {
+      "storm_id": "1760",
+      "start": "2026-02-18T17:00:00+08:00",
+      "end": "2026-02-18T19:25:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 3,
+      "max_h_intensity": 0.995,
+      "max_h_antecedent": 0.68,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.991,
+          "h_antecedent": 0.68,
+          "max_30min_mm": 45.4,
+          "max_60min_mm": 75.8,
+          "prior_24h_mm": 4.8
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.992,
+          "h_antecedent": 0.554,
+          "max_30min_mm": 45.6,
+          "max_60min_mm": 70.0,
+          "prior_24h_mm": 1.6
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.995,
+          "h_antecedent": 0.651,
+          "max_30min_mm": 46.6,
+          "max_60min_mm": 73.8,
+          "prior_24h_mm": 4.2
+        }
+      }
+    },
+    {
+      "storm_id": "1756",
+      "start": "2026-02-14T15:40:00+08:00",
+      "end": "2026-02-14T19:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.965,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.963,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 35.0,
+          "max_60min_mm": 45.0,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.927,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 28.0,
+          "max_60min_mm": 40.0,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.965,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 38.6,
+          "max_60min_mm": 48.8,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1737",
+      "start": "2025-12-14T14:30:00+08:00",
+      "end": "2025-12-14T18:30:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.985,
+      "max_h_antecedent": 0.986,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.985,
+          "h_antecedent": 0.986,
+          "max_30min_mm": 36.0,
+          "max_60min_mm": 43.2,
+          "prior_24h_mm": 62.2
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.977,
+          "h_antecedent": 0.969,
+          "max_30min_mm": 39.0,
+          "max_60min_mm": 48.4,
+          "prior_24h_mm": 44.4
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.969,
+          "h_antecedent": 0.955,
+          "max_30min_mm": 35.6,
+          "max_60min_mm": 48.2,
+          "prior_24h_mm": 43.4
+        }
+      }
+    },
+    {
+      "storm_id": "1697",
+      "start": "2025-10-03T08:00:00+08:00",
+      "end": "2025-10-03T10:20:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.996,
+      "max_h_antecedent": 0.722,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.722,
+          "max_30min_mm": 44.2,
+          "max_60min_mm": 72.6,
+          "prior_24h_mm": 6.6
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.992,
+          "h_antecedent": 0.695,
+          "max_30min_mm": 45.6,
+          "max_60min_mm": 73.4,
+          "prior_24h_mm": 6.0
+        }
+      }
+    },
+    {
+      "storm_id": "1679",
+      "start": "2025-08-24T06:00:00+08:00",
+      "end": "2025-08-24T12:00:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.98,
+      "max_h_antecedent": 0.799,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.954,
+          "h_antecedent": 0.799,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 44.0,
+          "prior_24h_mm": 11.2
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.98,
+          "h_antecedent": 0.747,
+          "max_30min_mm": 46.4,
+          "max_60min_mm": 61.4,
+          "prior_24h_mm": 8.2
+        }
+      }
+    },
+    {
+      "storm_id": "1675",
+      "start": "2025-08-15T05:15:00+08:00",
+      "end": "2025-08-15T09:10:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.966,
+      "max_h_antecedent": 0.372,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.962,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 32.6,
+          "max_60min_mm": 43.2,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.966,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 43.0,
+          "max_60min_mm": 52.4,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1669",
+      "start": "2025-07-30T20:15:00+08:00",
+      "end": "2025-07-30T21:25:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.981,
+      "max_h_antecedent": 0.372,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.981,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 40.4,
+          "max_60min_mm": 51.4,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.954,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 38.4,
+          "max_60min_mm": 45.2,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1654",
+      "start": "2025-06-23T07:30:00+08:00",
+      "end": "2025-06-23T10:50:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.985,
+      "max_h_antecedent": 0.372,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.96,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 30.6,
+          "max_60min_mm": 31.6,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.985,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 30.0,
+          "max_60min_mm": 30.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1632",
+      "start": "2025-05-03T06:55:00+08:00",
+      "end": "2025-05-03T09:10:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.99,
+      "max_h_antecedent": 0.411,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.962,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 35.2,
+          "max_60min_mm": 45.8,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.99,
+          "h_antecedent": 0.411,
+          "max_30min_mm": 47.2,
+          "max_60min_mm": 71.0,
+          "prior_24h_mm": 0.2
+        }
+      }
+    },
+    {
+      "storm_id": "1623",
+      "start": "2025-04-20T16:35:00+08:00",
+      "end": "2025-04-20T18:40:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.815,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.815,
+          "max_30min_mm": 51.0,
+          "max_60min_mm": 75.4,
+          "prior_24h_mm": 12.4
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.99,
+          "h_antecedent": 0.792,
+          "max_30min_mm": 45.8,
+          "max_60min_mm": 68.4,
+          "prior_24h_mm": 11.0
+        }
+      }
+    },
+    {
+      "storm_id": "1616",
+      "start": "2025-04-13T13:00:00+08:00",
+      "end": "2025-04-13T15:45:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.986,
+      "max_h_antecedent": 0.937,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.986,
+          "h_antecedent": 0.773,
+          "max_30min_mm": 42.4,
+          "max_60min_mm": 51.8,
+          "prior_24h_mm": 9.6
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.964,
+          "h_antecedent": 0.937,
+          "max_30min_mm": 36.0,
+          "max_60min_mm": 46.2,
+          "prior_24h_mm": 37.2
+        }
+      }
+    },
+    {
+      "storm_id": "1565",
+      "start": "2024-12-29T15:05:00+08:00",
+      "end": "2024-12-29T17:50:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.989,
+      "max_h_antecedent": 0.653,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.989,
+          "h_antecedent": 0.653,
+          "max_30min_mm": 48.4,
+          "max_60min_mm": 63.6,
+          "prior_24h_mm": 3.8
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.987,
+          "h_antecedent": 0.6,
+          "max_30min_mm": 40.0,
+          "max_60min_mm": 55.6,
+          "prior_24h_mm": 2.6
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.959,
+          "h_antecedent": 0.529,
+          "max_30min_mm": 35.6,
+          "max_60min_mm": 44.8,
+          "prior_24h_mm": 1.4
+        }
+      }
+    },
+    {
+      "storm_id": "1556",
+      "start": "2024-11-29T05:55:00+08:00",
+      "end": "2024-11-29T12:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.986,
+      "max_h_antecedent": 0.836,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.961,
+          "h_antecedent": 0.788,
+          "max_30min_mm": 38.0,
+          "max_60min_mm": 48.6,
+          "prior_24h_mm": 10.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.986,
+          "h_antecedent": 0.832,
+          "max_30min_mm": 43.4,
+          "max_60min_mm": 52.4,
+          "prior_24h_mm": 13.8
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.836,
+          "max_30min_mm": 45.6,
+          "max_60min_mm": 57.2,
+          "prior_24h_mm": 15.6
+        }
+      }
+    },
+    {
+      "storm_id": "1550",
+      "start": "2024-11-24T15:10:00+08:00",
+      "end": "2024-11-24T17:05:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.995,
+      "max_h_antecedent": 0.672,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.871,
+          "h_antecedent": 0.529,
+          "max_30min_mm": 26.2,
+          "max_60min_mm": 33.2,
+          "prior_24h_mm": 1.0
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.99,
+          "h_antecedent": 0.672,
+          "max_30min_mm": 37.4,
+          "max_60min_mm": 51.6,
+          "prior_24h_mm": 4.6
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.995,
+          "h_antecedent": 0.548,
+          "max_30min_mm": 46.6,
+          "max_60min_mm": 64.0,
+          "prior_24h_mm": 1.6
+        }
+      }
+    },
+    {
+      "storm_id": "1540",
+      "start": "2024-11-16T14:35:00+08:00",
+      "end": "2024-11-16T17:35:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.995,
+      "max_h_antecedent": 0.691,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.973,
+          "h_antecedent": 0.63,
+          "max_30min_mm": 40.6,
+          "max_60min_mm": 53.6,
+          "prior_24h_mm": 3.2
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.691,
+          "max_30min_mm": 34.4,
+          "max_60min_mm": 50.2,
+          "prior_24h_mm": 5.2
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.995,
+          "h_antecedent": 0.591,
+          "max_30min_mm": 51.2,
+          "max_60min_mm": 69.8,
+          "prior_24h_mm": 2.6
+        }
+      }
+    },
+    {
+      "storm_id": "1522",
+      "start": "2024-10-14T07:35:00+08:00",
+      "end": "2024-10-14T14:05:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.996,
+      "max_h_antecedent": 0.842,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.993,
+          "h_antecedent": 0.842,
+          "max_30min_mm": 53.4,
+          "max_60min_mm": 77.4,
+          "prior_24h_mm": 15.2
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.788,
+          "max_30min_mm": 47.0,
+          "max_60min_mm": 72.6,
+          "prior_24h_mm": 10.4
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.985,
+          "h_antecedent": 0.824,
+          "max_30min_mm": 41.4,
+          "max_60min_mm": 68.4,
+          "prior_24h_mm": 14.6
+        }
+      }
+    },
+    {
+      "storm_id": "1385",
+      "start": "2024-02-03T15:35:00+08:00",
+      "end": "2024-02-03T19:05:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.988,
+      "max_h_antecedent": 0.745,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.977,
+          "h_antecedent": 0.745,
+          "max_30min_mm": 42.0,
+          "max_60min_mm": 53.2,
+          "prior_24h_mm": 7.4
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.982,
+          "h_antecedent": 0.637,
+          "max_30min_mm": 38.8,
+          "max_60min_mm": 53.8,
+          "prior_24h_mm": 3.6
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.988,
+          "h_antecedent": 0.591,
+          "max_30min_mm": 48.0,
+          "max_60min_mm": 64.8,
+          "prior_24h_mm": 2.6
+        }
+      }
+    },
+    {
+      "storm_id": "1330",
+      "start": "2023-11-28T15:10:00+08:00",
+      "end": "2023-11-28T18:20:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.99,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.99,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 49.6,
+          "max_60min_mm": 73.2,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.929,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 23.8,
+          "max_60min_mm": 40.2,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.971,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 40.8,
+          "max_60min_mm": 56.8,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1304",
+      "start": "2023-10-23T18:10:00+08:00",
+      "end": "2023-10-23T18:50:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.979,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.912,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 20.8,
+          "max_60min_mm": 21.2,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.978,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 28.0,
+          "max_60min_mm": 28.0,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.979,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 31.8,
+          "max_60min_mm": 32.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "1262",
+      "start": "2023-07-18T06:25:00+08:00",
+      "end": "2023-07-18T08:15:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.996,
+      "max_h_antecedent": 0.52,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.458,
+          "max_30min_mm": 47.8,
+          "max_60min_mm": 56.8,
+          "prior_24h_mm": 0.4
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.954,
+          "h_antecedent": 0.52,
+          "max_30min_mm": 35.6,
+          "max_60min_mm": 45.0,
+          "prior_24h_mm": 1.2
+        }
+      }
+    },
+    {
+      "storm_id": "1183",
+      "start": "2023-03-19T15:45:00+08:00",
+      "end": "2023-03-19T17:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.989,
+      "max_h_antecedent": 0.482,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.891,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 18.8,
+          "max_60min_mm": 18.8,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.989,
+          "h_antecedent": 0.482,
+          "max_30min_mm": 30.0,
+          "max_60min_mm": 30.2,
+          "prior_24h_mm": 0.6
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.96,
+          "h_antecedent": 0.411,
+          "max_30min_mm": 35.0,
+          "max_60min_mm": 35.2,
+          "prior_24h_mm": 0.2
+        }
+      }
+    },
+    {
+      "storm_id": "1123",
+      "start": "2022-12-08T16:10:00+08:00",
+      "end": "2022-12-08T19:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.963,
+      "max_h_antecedent": 0.819,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.963,
+          "h_antecedent": 0.742,
+          "max_30min_mm": 38.6,
+          "max_60min_mm": 44.8,
+          "prior_24h_mm": 7.2
+        },
+        "S50": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.876,
+          "h_antecedent": 0.784,
+          "max_30min_mm": 22.0,
+          "max_60min_mm": 24.0,
+          "prior_24h_mm": 10.2
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.951,
+          "h_antecedent": 0.819,
+          "max_30min_mm": 38.4,
+          "max_60min_mm": 42.4,
+          "prior_24h_mm": 13.6
+        }
+      }
+    },
+    {
+      "storm_id": "1079",
+      "start": "2022-10-03T12:55:00+08:00",
+      "end": "2022-10-03T17:25:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.964,
+      "max_h_antecedent": 0.781,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.94,
+          "h_antecedent": 0.736,
+          "max_30min_mm": 31.0,
+          "max_60min_mm": 45.4,
+          "prior_24h_mm": 6.8
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.964,
+          "h_antecedent": 0.781,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 46.8,
+          "prior_24h_mm": 10.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.955,
+          "h_antecedent": 0.701,
+          "max_30min_mm": 39.4,
+          "max_60min_mm": 52.8,
+          "prior_24h_mm": 6.2
+        }
+      }
+    },
+    {
+      "storm_id": "1072",
+      "start": "2022-09-25T06:30:00+08:00",
+      "end": "2022-09-25T12:45:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.979,
+      "max_h_antecedent": 0.888,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.903,
+          "h_antecedent": 0.798,
+          "max_30min_mm": 23.0,
+          "max_60min_mm": 37.6,
+          "prior_24h_mm": 10.6
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.979,
+          "h_antecedent": 0.888,
+          "max_30min_mm": 38.8,
+          "max_60min_mm": 49.4,
+          "prior_24h_mm": 20.4
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.959,
+          "h_antecedent": 0.695,
+          "max_30min_mm": 40.2,
+          "max_60min_mm": 52.8,
+          "prior_24h_mm": 6.0
+        }
+      }
+    },
+    {
+      "storm_id": "1069",
+      "start": "2022-09-18T08:10:00+08:00",
+      "end": "2022-09-18T14:05:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.989,
+      "max_h_antecedent": 0.712,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.982,
+          "h_antecedent": 0.512,
+          "max_30min_mm": 40.0,
+          "max_60min_mm": 57.2,
+          "prior_24h_mm": 0.8
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.989,
+          "h_antecedent": 0.712,
+          "max_30min_mm": 43.4,
+          "max_60min_mm": 62.8,
+          "prior_24h_mm": 6.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.988,
+          "h_antecedent": 0.507,
+          "max_30min_mm": 39.2,
+          "max_60min_mm": 57.4,
+          "prior_24h_mm": 1.0
+        }
+      }
+    },
+    {
+      "storm_id": "1051",
+      "start": "2022-08-21T02:00:00+08:00",
+      "end": "2022-08-21T04:35:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.992,
+      "max_h_antecedent": 0.786,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.966,
+          "h_antecedent": 0.786,
+          "max_30min_mm": 39.8,
+          "max_60min_mm": 51.2,
+          "prior_24h_mm": 9.8
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.992,
+          "h_antecedent": 0.781,
+          "max_30min_mm": 46.4,
+          "max_60min_mm": 57.8,
+          "prior_24h_mm": 10.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.959,
+          "h_antecedent": 0.768,
+          "max_30min_mm": 40.2,
+          "max_60min_mm": 49.4,
+          "prior_24h_mm": 9.6
+        }
+      }
+    },
+    {
+      "storm_id": "991",
+      "start": "2022-04-23T14:35:00+08:00",
+      "end": "2022-04-23T15:35:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.992,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.959,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 37.8,
+          "max_60min_mm": 43.4,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.984,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 35.6,
+          "max_60min_mm": 41.0,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.992,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 49.6,
+          "max_60min_mm": 55.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "984",
+      "start": "2022-04-15T06:45:00+08:00",
+      "end": "2022-04-15T11:30:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 35.6,
+          "max_60min_mm": 51.6,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.864,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 17.0,
+          "max_60min_mm": 30.8,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.979,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 37.0,
+          "max_60min_mm": 55.6,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "982",
+      "start": "2022-04-11T10:40:00+08:00",
+      "end": "2022-04-11T12:20:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.975,
+      "max_h_antecedent": 0.504,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.953,
+          "h_antecedent": 0.462,
+          "max_30min_mm": 36.0,
+          "max_60min_mm": 49.0,
+          "prior_24h_mm": 0.4
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.504,
+          "max_30min_mm": 27.4,
+          "max_60min_mm": 49.8,
+          "prior_24h_mm": 0.8
+        },
+        "S201": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.916,
+          "h_antecedent": 0.472,
+          "max_30min_mm": 27.8,
+          "max_60min_mm": 42.8,
+          "prior_24h_mm": 0.6
+        }
+      }
+    },
+    {
+      "storm_id": "970",
+      "start": "2022-03-17T13:40:00+08:00",
+      "end": "2022-03-17T14:45:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.996,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 51.2,
+          "max_60min_mm": 72.6,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Baseline",
+          "h_intensity": 0.705,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 11.2,
+          "max_60min_mm": 14.0,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.984,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 29.4,
+          "max_60min_mm": 31.8,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "941",
+      "start": "2022-02-09T15:10:00+08:00",
+      "end": "2022-02-09T17:55:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 3,
+      "max_h_intensity": 1.0,
+      "max_h_antecedent": 0.428,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.428,
+          "max_30min_mm": 45.8,
+          "max_60min_mm": 46.0,
+          "prior_24h_mm": 0.2
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 1.0,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 34.2,
+          "max_60min_mm": 34.6,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.998,
+          "h_antecedent": 0.411,
+          "max_30min_mm": 43.2,
+          "max_60min_mm": 43.8,
+          "prior_24h_mm": 0.2
+        }
+      }
+    },
+    {
+      "storm_id": "892",
+      "start": "2021-11-09T14:55:00+08:00",
+      "end": "2021-11-09T18:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.997,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.979,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 35.2,
+          "max_60min_mm": 38.2,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.997,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 31.2,
+          "max_60min_mm": 36.2,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 45.4,
+          "max_60min_mm": 51.2,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "844",
+      "start": "2021-08-24T09:25:00+08:00",
+      "end": "2021-08-24T15:20:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.941,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.941,
+          "max_30min_mm": 50.0,
+          "max_60min_mm": 75.6,
+          "prior_24h_mm": 34.4
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.988,
+          "h_antecedent": 0.925,
+          "max_30min_mm": 36.8,
+          "max_60min_mm": 70.6,
+          "prior_24h_mm": 33.8
+        }
+      }
+    },
+    {
+      "storm_id": "835",
+      "start": "2021-08-14T16:00:00+08:00",
+      "end": "2021-08-14T18:40:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.998,
+      "max_h_antecedent": 0.522,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.993,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 44.6,
+          "max_60min_mm": 49.4,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.522,
+          "max_30min_mm": 35.2,
+          "max_60min_mm": 36.2,
+          "prior_24h_mm": 1.0
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.998,
+          "h_antecedent": 0.411,
+          "max_30min_mm": 48.4,
+          "max_60min_mm": 53.2,
+          "prior_24h_mm": 0.2
+        }
+      }
+    },
+    {
+      "storm_id": "829",
+      "start": "2021-08-01T08:15:00+08:00",
+      "end": "2021-08-01T11:15:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.981,
+      "max_h_antecedent": 0.991,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.97,
+          "h_antecedent": 0.991,
+          "max_30min_mm": 33.6,
+          "max_60min_mm": 53.0,
+          "prior_24h_mm": 69.6
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.969,
+          "h_antecedent": 0.952,
+          "max_30min_mm": 31.0,
+          "max_60min_mm": 48.8,
+          "prior_24h_mm": 38.8
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.981,
+          "h_antecedent": 0.968,
+          "max_30min_mm": 41.4,
+          "max_60min_mm": 60.4,
+          "prior_24h_mm": 49.8
+        }
+      }
+    },
+    {
+      "storm_id": "826",
+      "start": "2021-07-12T18:20:00+08:00",
+      "end": "2021-07-12T22:35:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 3,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.804,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.804,
+          "max_30min_mm": 60.0,
+          "max_60min_mm": 80.4,
+          "prior_24h_mm": 11.4
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.982,
+          "h_antecedent": 0.614,
+          "max_30min_mm": 42.0,
+          "max_60min_mm": 53.8,
+          "prior_24h_mm": 3.0
+        },
+        "S201": {
+          "hazard_class": "High",
+          "h_intensity": 0.971,
+          "h_antecedent": 0.631,
+          "max_30min_mm": 43.2,
+          "max_60min_mm": 54.0,
+          "prior_24h_mm": 3.6
+        }
+      }
+    },
+    {
+      "storm_id": "772",
+      "start": "2021-04-17T12:25:00+08:00",
+      "end": "2021-04-17T18:25:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 1.0,
+      "max_h_antecedent": 0.793,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.793,
+          "max_30min_mm": 54.8,
+          "max_60min_mm": 98.6,
+          "prior_24h_mm": 10.2
+        },
+        "S201": {
+          "hazard_class": "Very high",
+          "h_intensity": 1.0,
+          "h_antecedent": 0.604,
+          "max_30min_mm": 47.8,
+          "max_60min_mm": 88.0,
+          "prior_24h_mm": 3.0
+        }
+      }
+    },
+    {
+      "storm_id": "764",
+      "start": "2021-04-05T14:20:00+08:00",
+      "end": "2021-04-05T18:00:00+08:00",
+      "stations_reporting": 3,
+      "n_stations_elevated": 3,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.999,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.999,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 56.0,
+          "max_60min_mm": 67.4,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.96,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 34.4,
+          "max_60min_mm": 43.6,
+          "prior_24h_mm": 0.0
+        },
+        "S201": {
+          "hazard_class": "Elevated",
+          "h_intensity": 0.938,
+          "h_antecedent": 0.346,
+          "max_30min_mm": 35.8,
+          "max_60min_mm": 46.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "540",
+      "start": "2020-03-07T14:40:00+08:00",
+      "end": "2020-03-07T17:50:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.984,
+      "max_h_antecedent": 0.522,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.959,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 29.0,
+          "max_60min_mm": 30.0,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.984,
+          "h_antecedent": 0.522,
+          "max_30min_mm": 40.2,
+          "max_60min_mm": 45.6,
+          "prior_24h_mm": 1.0
+        }
+      }
+    },
+    {
+      "storm_id": "393",
+      "start": "2019-03-21T16:00:00+08:00",
+      "end": "2019-03-21T19:35:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.962,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.962,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 32.4,
+          "max_60min_mm": 36.2,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.953,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 31.8,
+          "max_60min_mm": 36.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "370",
+      "start": "2018-12-15T18:15:00+08:00",
+      "end": "2018-12-15T19:25:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.984,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.984,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 44.6,
+          "max_60min_mm": 56.8,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.966,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 29.6,
+          "max_60min_mm": 31.0,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "369",
+      "start": "2018-12-12T14:30:00+08:00",
+      "end": "2018-12-12T16:45:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 0,
+      "max_h_intensity": 0.98,
+      "max_h_antecedent": 0.808,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.975,
+          "h_antecedent": 0.723,
+          "max_30min_mm": 41.8,
+          "max_60min_mm": 50.8,
+          "prior_24h_mm": 6.2
+        },
+        "S50": {
+          "hazard_class": "High",
+          "h_intensity": 0.98,
+          "h_antecedent": 0.808,
+          "max_30min_mm": 36.8,
+          "max_60min_mm": 52.4,
+          "prior_24h_mm": 11.8
+        }
+      }
+    },
+    {
+      "storm_id": "295",
+      "start": "2018-07-25T09:40:00+08:00",
+      "end": "2018-07-25T11:00:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 1,
+      "max_h_intensity": 0.996,
+      "max_h_antecedent": 0.377,
+      "catchment_hazard": "Multi-station high",
+      "stations": {
+        "S35": {
+          "hazard_class": "High",
+          "h_intensity": 0.986,
+          "h_antecedent": 0.377,
+          "max_30min_mm": 45.4,
+          "max_60min_mm": 63.8,
+          "prior_24h_mm": 0.0
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.996,
+          "h_antecedent": 0.372,
+          "max_30min_mm": 49.0,
+          "max_60min_mm": 58.4,
+          "prior_24h_mm": 0.0
+        }
+      }
+    },
+    {
+      "storm_id": "269",
+      "start": "2018-06-02T05:25:00+08:00",
+      "end": "2018-06-02T09:40:00+08:00",
+      "stations_reporting": 2,
+      "n_stations_elevated": 2,
+      "n_stations_high": 2,
+      "n_stations_extreme": 2,
+      "max_h_intensity": 0.993,
+      "max_h_antecedent": 0.803,
+      "catchment_hazard": "Regional very high",
+      "stations": {
+        "S35": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.993,
+          "h_antecedent": 0.798,
+          "max_30min_mm": 52.2,
+          "max_60min_mm": 78.8,
+          "prior_24h_mm": 10.6
+        },
+        "S50": {
+          "hazard_class": "Very high",
+          "h_intensity": 0.99,
+          "h_antecedent": 0.803,
+          "max_30min_mm": 40.2,
+          "max_60min_mm": 63.2,
+          "prior_24h_mm": 11.4
+        }
+      }
+    }
+  ]
+}
