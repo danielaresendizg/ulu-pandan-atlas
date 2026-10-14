@@ -1,0 +1,6 @@
+.DS_Store
+*.txt
+!requirements.txt
+.dgs_key
+*.key
+__pycache__/

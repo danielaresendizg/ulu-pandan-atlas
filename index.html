@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Map atlas of the subzones along Ulu Pandan Canal, Singapore: land use, water, mobility, public space, forests, planned investment and a modelled catchment.">
+<title>Ulu Pandan Atlas</title>
+<style>
+html,body{margin:0}
+.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* Layout: one-screen atlas. Top bar, then layer rail | map | subzone panel; stacks on phones.
+   OneMap Default basemap whitened (greyscale, low contrast), planning-standard land-use colours, overlays in ink so they read on top.
+   Deliberate single light theme on white, for map legibility. */
+:root{
+  color-scheme:light;
+  --bg:#ffffff; --surface:#ffffff; --ink:#141615; --muted:#5a5f5c; --line:#d6d9d5; --soft:#eceeeb;
+  --water:#1f63a8; --water-fill:#8fc7ea; --green:#3f7d34; --forest:#2f6b2a;
+  --lu-res:#ffe680; --lu-mixed:#ffb347; --lu-com:#e8473a; --lu-ind:#9b6bc6; --lu-bp:#c9a3e3;
+  --lu-inst:#5b8fd0; --lu-park:#7cc56a; --lu-water:#8fc7ea; --lu-road:#c4c4c4; --lu-util:#a08060;
+  --lu-reserve:#e7e7e2; --lu-other:#b5b5aa;
+  --tile-filter:grayscale(1) contrast(.6) brightness(1.15); --sel:#141615; --invest:#d9730d;
+  --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.4}
+*{box-sizing:border-box}
+.app{display:grid;grid-template-rows:auto 1fr;height:100%}
+header.bar{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--surface)}
+header.bar h1{font-size:18px;margin:0;letter-spacing:-.2px}
+header.bar .sub{color:var(--muted);font-size:13px}
+header.bar .reach{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.seg{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 10px;font:inherit;font-size:12.5px;cursor:pointer;border-radius:999px}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.seg:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--water);outline-offset:2px}
+.main{display:grid;grid-template-columns:240px minmax(0,1fr) 330px;min-height:0}
+.app.no-left .main{grid-template-columns:minmax(0,1fr) 330px}.app.no-right .main{grid-template-columns:240px minmax(0,1fr)}.app.no-left.no-right .main{grid-template-columns:minmax(0,1fr)}
+.app.no-left aside.layers,.app.no-right aside.panel{display:none}
+.toggles{display:flex;gap:4px}
+aside{overflow:auto;background:var(--surface);min-width:0}
+aside.layers{border-right:1px solid var(--line);padding:10px 14px 20px}
+aside.panel{border-left:1px solid var(--line);padding:12px 14px 20px;display:flex;flex-direction:column;gap:14px}
+#map{height:100%;min-height:320px;background:#ffffff}
+.leaflet-container{background:#ffffff;font-family:var(--font)}
+.leaflet-tile-pane{filter:var(--tile-filter)}
+.leaflet-pane > svg{pointer-events:none}
+.group{display:flex;flex-direction:column;gap:1px;padding-block:8px;border-top:1px solid var(--line)}
+.group:first-child{border-top:0}
+.ghead{display:flex;align-items:center;gap:6px}
+.gtoggle{flex:1;display:flex;align-items:center;gap:6px;border:0;background:none;color:var(--muted);font:inherit;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:4px 2px;cursor:pointer;text-align:left;border-radius:4px}
+.gtoggle:hover{background:var(--soft);color:var(--ink)}
+.gtoggle .chev{display:inline-block;transition:transform .15s;font-size:10px}
+.gtoggle[aria-expanded="true"] .chev{transform:rotate(90deg)}
+.gcount{margin-left:auto;font-family:var(--mono);letter-spacing:0;text-transform:none;font-weight:400}
+.gall{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.gall input{margin:0;accent-color:var(--ink)}
+.group.closed{padding-block:4px}
+.group h2,.panel h2{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:600}
+.lyr{display:grid;grid-template-columns:16px 16px minmax(0,1fr) auto;align-items:center;gap:8px;padding:4px 2px;cursor:pointer;border-radius:4px}
+.lyr:hover{background:var(--soft)}
+.lyr input{margin:0;accent-color:var(--ink)}
+.lyr .name{font-size:13px}
+.lyr .src{display:block;font-size:11px;color:var(--muted)}
+.lyr .n{font-family:var(--mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.lyr.empty{cursor:default}.lyr.empty .name{color:var(--muted)}
+.sw{width:14px;height:14px;display:inline-block;border-radius:2px;border:1px solid var(--line)}
+.sw.dot{border-radius:50%}
+.sw.line{height:3px;border:0;border-radius:0}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px;font-size:11.5px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px;min-width:0}
+label.ctl{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+select{font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px}
+.ramp{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ramp span{display:flex;align-items:center;gap:5px}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.kpi{border:1px solid var(--line);padding:8px 10px;border-radius:6px;min-width:0}
+.kpi b{display:block;font-size:20px;font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.kpi small{color:var(--muted);font-size:11.5px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:12.5px;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:600;font-size:11.5px;color:var(--muted);cursor:pointer;user-select:none;background:var(--surface)}
+th[aria-sort="descending"]::after{content:" ↓"}
+th[aria-sort="ascending"]::after{content:" ↑"}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--soft)}
+tbody tr.on{background:var(--ink);color:var(--surface)}
+tbody tr.dim{opacity:.38}
+tfoot td{font-weight:600;border-bottom:0}
+.tag{font-size:10.5px;padding:1px 6px;border-radius:999px;border:1px solid var(--line);color:var(--muted);align-self:flex-start}
+.note{font-size:11.5px;color:var(--muted);margin:0}
+.detail{border:1px solid var(--line);border-radius:6px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.detail h3{margin:0;font-size:15px}
+.detail dl{display:grid;grid-template-columns:1fr auto;gap:2px 12px;margin:0;font-size:12.5px;font-variant-numeric:tabular-nums}
+.detail dt{color:var(--muted)}.detail dd{margin:0;text-align:right}
+details.gaps{border:1px solid var(--line);border-radius:6px;padding:8px 12px}
+details.gaps summary{cursor:pointer;font-size:12.5px;font-weight:600}
+details.gaps ul{margin:8px 0 0;padding-left:18px;font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--ink);border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.leaflet-popup-content{margin:10px 12px;font-size:12.5px;line-height:1.45;min-width:180px}
+.leaflet-popup-content h4{margin:0 0 4px;font-size:13px}
+.leaflet-popup-content .k{color:var(--muted)}
+.leaflet-popup-content .srcline{margin-top:6px;font-size:11px;color:var(--muted)}
+.leaflet-popup-content a{color:var(--water)}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-bar a{background:var(--surface);color:var(--ink);border-bottom-color:var(--line)}
+.leaflet-bar a:hover{background:var(--soft)}
+.leaflet-control-attribution{background:var(--surface)!important;color:var(--muted);font-size:10.5px}
+.leaflet-control-attribution a{color:var(--muted)}
+.leaflet-control-scale-line{background:var(--surface);color:var(--ink);border-color:var(--ink)}
+.leaflet-tooltip{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.maplegend{background:var(--surface);border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.15);font-size:12px;color:var(--ink);max-width:260px}
+.lgtoggle{display:flex;justify-content:space-between;width:100%;border:0;background:none;font:inherit;font-weight:600;font-size:12px;padding:7px 10px;cursor:pointer;color:var(--ink)}
+.lgbody{max-height:46vh;overflow:auto;padding:0 10px 8px;display:flex;flex-direction:column;gap:2px}
+.lghead{font-weight:600;font-size:11.5px;margin-top:6px}
+.lgsub{font-size:11px;color:var(--muted);margin-top:2px}
+.lgrow{display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:6px;line-height:1.25}
+.lgrow.solo{margin-top:4px}
+.lgn{font-family:var(--mono);font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:700px){.maplegend{max-width:200px}.lgbody{max-height:30vh}}
+footer.sources{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+@media (max-width:1100px){.app .main,.app.no-left .main,.app.no-right .main{grid-template-columns:230px minmax(0,1fr);grid-template-rows:minmax(440px,64vh) auto;overflow:auto}aside.panel{grid-column:1 / -1;border-left:0;border-top:1px solid var(--line)}}
+@media (max-width:700px){.app{height:auto}.main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}#map{height:62vh}aside.layers{border-right:0;border-bottom:1px solid var(--line)}header.bar .reach{margin-left:0}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+</head>
+<body>
+<div class="app" id="app">
+  <header class="bar">
+    <h1>Ulu Pandan Atlas</h1>
+    <span class="sub">12 subzones crossed by the Ulu Pandan Park Connector · official data, not re-estimated</span>
+    <div class="toggles" role="group" aria-label="Panels">
+      <button class="seg" id="tg-left" aria-pressed="true">Layers panel</button>
+      <button class="seg" id="tg-right" aria-pressed="true">Subzones panel</button>
+    </div>
+    <div class="reach" role="group" aria-label="Filter by reach">
+      <button class="seg" id="r-all" aria-pressed="true" data-r="all">All</button>
+      <button class="seg" id="r-study" aria-pressed="false" data-r="Study reach (Pandan to Buona Vista)">Study reach</button>
+      <button class="seg" id="r-north" aria-pressed="false" data-r="North branch (Bukit Batok)">North branch</button>
+    </div>
+  </header>
+  <div class="main">
+    <aside class="layers" aria-label="Layers">
+      <div id="layerlist"></div>
+      <footer class="sources">
+        Basemap: OneMap, Default style (Singapore Land Authority), shown in greyscale and lightened. Layers: data.gov.sg (URA, SingStat, PUB, NParks, LTA, HDB, NEA, SLA, People's Association, SportSG, ECDA), downloaded 14 Oct 2026. Forests and waterways: © OpenStreetMap contributors (ODbL).
+      </footer>
+    </aside>
+    <div id="map" role="region" aria-label="Map of the study area"></div>
+    <aside class="panel" aria-label="Subzones">
+      <div class="kpis" id="kpis"></div>
+      <label class="ctl" for="choro">Shade subzones by
+        <select id="choro">
+          <option value="">None (outline only)</option>
+          <option value="pop_total">Total residents</option>
+          <option value="pop_65_plus">Residents aged 65+</option>
+          <option value="pop_0_14">Residents aged 0–14</option>
+          <option value="hdb_total">Residents in HDB flats</option>
+          <option value="condo">Residents in condominiums</option>
+          <option value="landed">Residents in landed homes</option>
+        </select>
+      </label>
+      <div class="ramp" id="ramp" hidden></div>
+      <div id="detail" class="detail" hidden></div>
+      <h2>Subzones · Census 2020</h2>
+      <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody><tfoot></tfoot></table></div>
+      <p class="note">Select a row or a subzone outline to see its detail; select a header to sort. Census values are SingStat's, rounded to the nearest 10; "–" in the source shows as 0. "Connector" is the metres of the Ulu Pandan Park Connector inside the subzone.</p>
+      <details class="gaps">
+        <summary>Not on this map yet, and why</summary>
+        <ul>
+          <li>Street-level imagery (Global Streetscapes, NUS UAL): its Singapore images only cover Holland, Buona Vista and NUS, east of this area. Mapillary would need an API token.</li>
+          <li>Household income, household type and mode of transport: Census 2020 publishes these by planning area only, not by subzone.</li>
+          <li>PUB drainage network, drainage catchments and canal water quality: not open data. Request from PUB or measure in the field.</li>
+          <li>Live and historical water levels: only sensor locations are open; readings are on PUB's site and the myENV app.</li>
+          <li>Land cover, canopy height and land surface temperature rasters (ESA WorldCover, Meta canopy height, Landsat): need Earth Engine processing.</li>
+          <li>HDB Property Information (year built, floors, units): no shared key with the building footprints yet.</li>
+          <li>Planned investment: PUB publishes no map of the canal improvement, and HDB's under-construction layer stops in 2018. Those two layers are drawn by us and are approximate; contract values come from GeBIZ (awards Apr 2021–Mar 2026).</li>\n          <li>Catchment: PUB publishes no catchment boundaries. The catchment layers are modelled from 30 m elevation and mapped drains; the 16.7 km² total is below the >25 km² reported by Saxena et al. (2015), partly because the Bukit Timah diversion is engineered.</li>
+          <li>Historic sites, Master Plan nature areas, Master Plan public-space markers and state reserve lots: none fall inside the study area.</li>
+        </ul>
+      </details>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => (n ?? 0).toLocaleString('en-US');
+const label = k => ({gross_plot_ratio:'Gross plot ratio', pcn_m:'Connector (m)', path_width_m:'Path width (m)', osm_tag:'OSM tag',
+  mp2025_zoning:'Master Plan 2025 zoning inside', inside_study_subzones_pct:'Share inside study subzones (%)', area_ha:'Area (ha)',
+  on_canal:'On the canal', station_id:'Station ID', hex_id:'Hex ID', abc_waters:'ABC Waters', contracts:'Contracts', total:'Total', area_km2:'Area (km²)', upstream_area_km2:'Area draining here (km²)', pct_residential:'Residential (%)', pct_business:'Business/industry (%)', pct_park:'Park, open space, reserve (%)', pct_road_and_transport:'Roads and transport (%)', pct_waterbody:'Waterbody (%)', pct_other:'Other (%)', upstream_km2_class:'Upstream area class (km²)', pour_point:'Outlet'}[k] || k.replace(/_/g,' ').replace(/^./, c => c.toUpperCase()));
+
+// Planning-standard land-use colours (residential yellow, commercial red, industry purple, institutions blue, parks green, water blue)
+const LU = [
+  ['Residential', '--lu-res', u => /^RESIDENTIAL$|LANDED/.test(u)],
+  ['Mixed residential/commercial', '--lu-mixed', u => /RESIDENTIAL WITH|COMMERCIAL & RESIDENTIAL|COMMERCIAL AND RESIDENTIAL/.test(u)],
+  ['Commercial / hotel', '--lu-com', u => /^COMMERCIAL|HOTEL/.test(u)],
+  ['Business 1 & 2 (industry)', '--lu-ind', u => /^BUSINESS [12]/.test(u)],
+  ['Business park', '--lu-bp', u => /BUSINESS PARK/.test(u)],
+  ['Institutions (civic, education, health, worship)', '--lu-inst', u => /CIVIC|EDUCATION|HEALTH|WORSHIP/.test(u)],
+  ['Park, open space, sport', '--lu-park', u => /^PARK|OPEN SPACE|SPORTS|BEACH|NATURE/.test(u)],
+  ['Waterbody', '--lu-water', u => /WATERBODY/.test(u)],
+  ['Road and transport', '--lu-road', u => /ROAD|TRANSPORT|RAPID|PORT/.test(u)],
+  ['Utility', '--lu-util', u => /UTILITY/.test(u)],
+  ['Reserve site', '--lu-reserve', u => /RESERVE SITE/.test(u)],
+  ['Other (special use, cemetery)', '--lu-other', u => true]
+];
+const luColor = u => css((LU.find(r => r[2](u || '')) || LU[LU.length-1])[1]);
+
+const inkPoint = (fill, r=5) => () => ({radius:r, color:css('--surface'), weight:1.5, fillColor:css(fill), fillOpacity:1});
+const LAYERS = [
+  {id:'subzones', g:'Study area', name:'Subzones', src:'URA MP2019 + Census 2020', file:'subzones.geojson', on:true, kind:'poly', sw:'outline'},
+  {id:'hex', g:'Study area', name:'Hexagon grid, 200 m', src:'URA hexagonal grid', file:'hex_grid_200m.geojson', on:false, kind:'poly', sw:'--muted',
+    style:() => ({color:css('--muted'), weight:.6, fill:false})},
+  {id:'landuse', g:'Land use and form', name:'Land use 2025', src:'URA Master Plan 2025', file:'landuse_2025.geojson', on:true, kind:'poly', sw:'--lu-res',
+    style:f => ({color:css('--surface'), weight:.3, fillColor:luColor(f.properties.land_use), fillOpacity:.45})},
+  {id:'bldg', g:'Land use and form', name:'Buildings', src:'URA Master Plan 2025 Building', file:'buildings_2025.geojson', on:false, kind:'poly', sw:'--muted',
+    style:() => ({color:css('--ink'), weight:.4, fillColor:css('--ink'), fillOpacity:.35})},
+  {id:'hdbuc', g:'Land use and form', name:'HDB under construction', src:'HDB', file:'hdb_under_construction.geojson', on:true, kind:'poly', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:1.5, dashArray:'4 3', fillColor:css('--ink'), fillOpacity:.12})},
+  {id:'height', g:'Land use and form', name:'Building height control', src:'URA MP2025 SDCP', file:'height_control.geojson', on:false, kind:'poly', sw:'--muted',
+    style:() => ({color:css('--muted'), weight:1, dashArray:'1 3', fillOpacity:0})},
+  {id:'vacant', g:'Land use and form', name:'Vacant state land', src:'SLA', file:'state_land_vacant.geojson', on:false, kind:'poly', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:1, fillColor:css('--ink'), fillOpacity:.25})},
+  {id:'reserve', g:'Land use and form', name:'State reserve', src:'SLA', file:'state_reserve.geojson', on:false, kind:'poly', sw:'--muted',
+    style:() => ({color:css('--muted'), weight:1, fillOpacity:.2})},
+  {id:'catch', g:'Catchment (modelled)', name:'Ulu Pandan catchment, 16.7 km²', src:'Derived: Copernicus 30 m + mapped drains', file:'catchment_ulu_pandan.geojson', on:true, kind:'poly', sw:'--water',
+    style:() => ({color:css('--water'), weight:3, dashArray:'10 5', fill:false})},
+  {id:'subc', g:'Catchment (modelled)', name:'Sub-catchments by sensor and outlet drain', src:'Derived; land-use shares in each popup', file:'catchment_subcatchments.geojson', on:false, kind:'poly', sw:'--water',
+    style:() => ({color:css('--water'), weight:1.2, fillColor:css('--water'), fillOpacity:.06})},
+  {id:'drosm', g:'Catchment (modelled)', name:'Mapped drains, canals, streams', src:'OpenStreetMap', file:'catchment_drainage_osm.geojson', on:false, kind:'line', sw:'--water', casing:true,
+    style:f => ({color:css('--water'), weight: f && f.properties.waterway === 'canal' ? 2.6 : f && f.properties.waterway === 'stream' ? 1.6 : 1.2, dashArray: f && f.properties.tunnel ? '3 3' : null})},
+  {id:'flowl', g:'Catchment (modelled)', name:'Modelled flow paths', src:'Derived from elevation; fills unmapped gaps', file:'catchment_dem_flowlines.geojson', on:false, kind:'line', sw:'--water',
+    style:() => ({color:css('--water'), weight:1, opacity:.6, dashArray:'2 3'})},
+  {id:'pour', g:'Catchment (modelled)', name:'Pour points (sub-catchment outlets)', src:'Snapped PUB sensor locations', file:'catchment_pour_points.geojson', on:false, kind:'point', sw:'--water',
+    style:() => ({radius:4, color:css('--water'), weight:2, fillColor:css('--surface'), fillOpacity:1})},
+  {id:'water', g:'Water', name:'Waterbodies and canal', src:'URA MP2025 SDCP Waterbody', file:'waterbodies.geojson', on:true, kind:'poly', sw:'--water',
+    style:() => ({color:css('--water'), weight:1, fillColor:css('--water'), fillOpacity:.7})},
+  {id:'osmww', casing:true, g:'Water', name:'Canals and streams (lines)', src:'OpenStreetMap', file:'osm_waterways.geojson', on:false, kind:'line', sw:'--water',
+    style:() => ({color:css('--water'), weight:1.6})},
+  {id:'abc', g:'Water', name:'ABC Waters projects', src:'PUB ABC Waters Completed', file:'abc_waters.geojson', on:true, kind:'poly', sw:'--water',
+    style:() => ({color:css('--water'), weight:2.2, dashArray:'2 3', fillColor:css('--water'), fillOpacity:.1})},
+  {id:'sensors', g:'Water', name:'PUB water level sensors', src:'PUB Water Level Sensors', file:'pub_sensors.geojson', on:true, kind:'point', sw:'--water',
+    style:f => ({radius:f && f.properties.on_canal ? 7 : 5, color:css('--surface'), weight:1.5, fillColor:css('--water'), fillOpacity:1})},
+  {id:'rain', g:'Water', name:'Rainfall stations', src:'NEA real-time rainfall', file:'rain_stations.geojson', on:true, kind:'point', sw:'--water',
+    style:() => ({radius:6, color:css('--water'), weight:2.5, fillColor:css('--surface'), fillOpacity:1})},
+  {id:'pcn', casing:true, g:'Mobility', name:'Ulu Pandan Park Connector', src:'NParks Park Connector Loop', file:'park_connector.geojson', on:true, kind:'line', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:3})},
+  {id:'tracks', casing:true, g:'Mobility', name:'NParks paths', src:'NParks Tracks', file:'nparks_tracks.geojson', on:false, kind:'line', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:1.2, dashArray:'3 2'})},
+  {id:'cycle', casing:true, g:'Mobility', name:'Cycling paths', src:'LTA Cycling Path Network', file:'cycling_paths.geojson', on:false, kind:'line', sw:'--muted',
+    style:() => ({color:css('--muted'), weight:1.8, dashArray:'1 3'})},
+  {id:'mrt', g:'Mobility', name:'MRT station exits', src:'LTA MRT Station Exit', file:'mrt_exits.geojson', on:true, kind:'point', sw:'--ink', style:inkPoint('--ink', 5)},
+  {id:'bus', g:'Mobility', name:'Bus stops', src:'LTA Bus Stop', file:'bus_stops.geojson', on:false, kind:'point', sw:'--muted',
+    style:() => ({radius:2.5, color:css('--ink'), weight:1, fillColor:css('--surface'), fillOpacity:1})},
+  {id:'bridges', g:'Mobility', name:'Bridges and flyovers', src:'LTA', file:'bridges_flyovers.geojson', on:false, kind:'poly', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:1, fillColor:css('--ink'), fillOpacity:.45})},
+  {id:'walls', casing:true, g:'Mobility', name:'Retaining walls', src:'LTA', file:'retaining_walls.geojson', on:false, kind:'line', sw:'--ink',
+    style:() => ({color:css('--ink'), weight:2})},
+  {id:'parks', g:'Public space', name:'Parks (existing)', src:'NParks Parks and Nature Reserves', file:'nparks_parks.geojson', on:true, kind:'poly', sw:'--green',
+    style:() => ({color:css('--green'), weight:1.5, fillColor:css('--green'), fillOpacity:.15})},
+  {id:'pparks', g:'Public space', name:'Parks (Master Plan 2025)', src:'URA MP2025 SDCP Park', file:'planned_parks_2025.geojson', on:false, kind:'poly', sw:'--green',
+    style:() => ({color:css('--green'), weight:1.5, dashArray:'4 3', fillOpacity:0})},
+  {id:'pspace', g:'Public space', name:'Public space (Master Plan 2025)', src:'URA MP2025 SDCP Public Space', file:'public_space_2025.geojson', on:false, kind:'point', sw:'--ink', style:inkPoint('--muted', 4)},
+  {id:'facil', g:'Public space', name:'Park facilities', src:'NParks Park Facilities', file:'park_facilities.geojson', on:false, kind:'point', sw:'--green', style:inkPoint('--green', 3.5)},
+  {id:'cc', g:'Public space', name:'Community clubs', src:"People's Association", file:'community_clubs.geojson', on:true, kind:'point', sw:'--ink', style:inkPoint('--ink', 6.5)},
+  {id:'rc', g:'Public space', name:"Residents' committees", src:"People's Association", file:'residents_committees.geojson', on:false, kind:'point', sw:'--ink',
+    style:() => ({radius:3.5, color:css('--ink'), weight:1.5, fillColor:css('--surface'), fillOpacity:1})},
+  {id:'hawker', g:'Public space', name:'Hawker centres', src:'NEA', file:'hawker_centres.geojson', on:true, kind:'point', sw:'--lu-com', style:inkPoint('--lu-com', 6)},
+  {id:'sport', g:'Public space', name:'Sport facilities', src:'SportSG', file:'sport_facilities.geojson', on:true, kind:'point', sw:'--lu-inst', style:inkPoint('--lu-inst', 6)},
+  {id:'presch', g:'Public space', name:'Preschools', src:'ECDA', file:'preschools.geojson', on:false, kind:'point', sw:'--muted', style:inkPoint('--muted', 3.5)},
+  {id:'railst', g:'Planned investment', name:'Rail stations (MP2025)', src:'URA MP2025; status from LTA; contracts from GeBIZ', file:'rail_stations_2025.geojson', on:true, kind:'point', sw:'--invest',
+    style:f => { const st = f && f.properties.status || ''; return st === 'Existing' ? {radius:4.5, color:css('--surface'), weight:1.5, fillColor:css('--ink'), fillOpacity:1}
+      : st === 'Planned' ? {radius:7.5, color:css('--invest'), weight:3, fillColor:css('--surface'), fillOpacity:1}
+      : {radius:7.5, color:css('--invest'), weight:3, fillColor:css('--ink'), fillOpacity:1}; }},
+  {id:'raillines', g:'Planned investment', name:'MRT lines, existing and planned', src:'URA MP2025 Rail Line', file:'rail_lines_2025.geojson', on:false, kind:'line', sw:'--muted',
+    style:() => ({color:css('--muted'), weight:2, dashArray:'6 4'})},
+  {id:'cycnet', g:'Planned investment', name:'Cycling network (planned dashed)', src:'URA MP2025 SDCP Cycling Network', file:'cycling_network_2025.geojson', on:false, kind:'line', sw:'--invest', casing:true,
+    style:f => (f && f.properties.status === 'Planned' ? {color:css('--invest'), weight:2.2, dashArray:'5 4'} : {color:css('--invest'), weight:2.2})},
+  {id:'canalup', g:'Planned investment', name:'Canal improvement, PUB (from 2Q 2026)', src:"PUB Drainage Improvement Projects list; reach drawn by us", file:'canal_upgrade_pub.geojson', on:true, kind:'poly', sw:'--invest',
+    style:() => ({color:css('--invest'), weight:3.5, fillColor:css('--invest'), fillOpacity:.45})},
+  {id:'hdbnew', g:'Planned investment', name:'New HDB blocks', src:'URA MP2025 buildings not yet in HDB layer', file:'hdb_new_blocks.geojson', on:true, kind:'poly', sw:'--invest',
+    style:() => ({color:css('--invest'), weight:.8, fillColor:css('--invest'), fillOpacity:.4})},
+  {id:'hdbcon', g:'Planned investment', name:'HDB contracts near the canal', src:'GeBIZ awarded contracts; outlines approximate', file:'hdb_contracts.geojson', on:true, kind:'poly', sw:'--invest',
+    style:() => ({color:css('--invest'), weight:2.5, dashArray:'6 4', fillColor:css('--invest'), fillOpacity:.06})},
+  {id:'forests', g:'Nature', name:'Forests and woodland (context)', src:'OpenStreetMap; extends beyond the subzones', file:'forests_osm.geojson', on:true, kind:'poly', sw:'--forest',
+    style:() => ({color:css('--forest'), weight:1.6, fillColor:css('--forest'), fillOpacity:.28})},
+  {id:'nways', casing:true, g:'Nature', name:'Nature Ways', src:'NParks', file:'nature_ways.geojson', on:true, kind:'line', sw:'--green',
+    style:() => ({color:css('--green'), weight:3, opacity:.85})},
+  {id:'htrees', g:'Nature', name:'Heritage trees', src:'NParks Heritage Trees', file:'heritage_trees.geojson', on:true, kind:'point', sw:'--forest', style:inkPoint('--forest', 6)},
+  {id:'tca', g:'Nature', name:'Tree conservation areas', src:'NParks', file:'tree_conservation.geojson', on:false, kind:'poly', sw:'--forest',
+    style:() => ({color:css('--forest'), weight:1, dashArray:'2 2', fillOpacity:.1})}
+];
+// Open with only the study area: every layer except the subzone outlines starts off
+LAYERS.forEach(d => { d.on = d.id === 'subzones'; });
+const ORDER = ['landuse','forests','parks','pparks','bldg','hdbuc','hdbnew','hdbcon','height','vacant','reserve','bridges','subc','water','abc','canalup','catch','hex','subzones','osmww','walls','cycle','tracks','raillines','cycnet','flowl','drosm','nways','pcn','bus','presch','facil','pspace','rc','cc','hawker','sport','htrees','mrt','railst','pour','rain','sensors'];
+
+const map = L.map('map', {preferCanvas:true, zoomSnap:.25});
+// Fixed drawing levels: polygons (canvas) < subzone outlines < lines < points (SVG; only drawn shapes take clicks)
+const PANES = {polys:410, units:420, lines:440, points:460};
+const R = {};
+for (const [name, z] of Object.entries(PANES)){ map.createPane(name).style.zIndex = z; R[name] = name === 'polys' ? L.canvas({pane:name, padding:.3}) : L.svg({pane:name, padding:.3}); }
+const paneOf = d => d.id === 'subzones' ? 'units' : d.kind === 'point' ? 'points' : d.kind === 'line' ? 'lines' : 'polys';
+map.attributionControl.setPrefix(false);
+map.attributionControl.addAttribution('data.gov.sg · © OpenStreetMap contributors · Copernicus DEM');
+L.control.scale({imperial:false, position:'bottomleft'}).addTo(map);
+
+// Basemap: OneMap Default tiles loaded live, shown greyscale and lightened via --tile-filter
+L.tileLayer('https://www.onemap.gov.sg/maps/tiles/Default/{z}/{x}/{y}.png', {
+  minZoom:11, maxZoom:19, detectRetina:true,
+  attribution:'<img src="https://www.onemap.gov.sg/web-assets/images/logo/om_logo.png" style="height:20px;width:20px;vertical-align:middle" alt="">&nbsp;<a href="https://www.onemap.gov.sg/" target="_blank" rel="noopener">OneMap</a>&nbsp;&copy;&nbsp;contributors&nbsp;&#124;&nbsp;<a href="https://www.sla.gov.sg/" target="_blank" rel="noopener">Singapore Land Authority</a>'
+}).addTo(map);
+
+const state = {reach:'all', choro:'', selected:null, sort:{k:'pop_total', dir:-1}};
+const layers = {}; let subzones = [];
+
+function popupHTML(def, p){
+  const rows = Object.entries(p).filter(([k,v]) => v !== null && v !== '' && k !== 'link')
+    .map(([k,v]) => `<div><span class="k">${esc(label(k))}:</span> ${esc(typeof v === 'number' ? fmt(v) : (typeof v === 'boolean' ? (v ? 'Yes' : 'No') : v))}</div>`).join('');
+  const link = p.link ? `<div><a href="${esc(p.link)}" target="_blank" rel="noopener">Open source page</a></div>` : '';
+  return `<h4>${esc(def.name)}</h4>${rows}${link}<div class="srcline">Source: ${esc(def.src)}</div>`;
+}
+
+const RAMP = ['#f1eef6','#bdc9e1','#74a9cf','#2b8cbe','#045a8d'];
+let breaks = [];
+function rampColor(v){ let i = breaks.findIndex(b => v <= b); return RAMP[i < 0 ? RAMP.length-1 : i]; }
+function subStyle(f){
+  const p = f.properties, inR = state.reach === 'all' || p.reach === state.reach, sel = state.selected === p.subzone;
+  return {fill: !!state.choro, color: sel ? css('--sel') : css('--ink'), weight: sel ? 3.5 : 1.4, opacity: inR ? 1 : .35, dashArray: sel ? null : '6 4',
+    fillColor: state.choro ? rampColor(p[state.choro]) : 'transparent', fillOpacity: state.choro ? (inR ? .8 : .2) : 0};
+}
+function computeBreaks(){
+  const el = document.getElementById('ramp');
+  if (!state.choro){ el.hidden = true; return; }
+  const vals = subzones.map(f => f.properties[state.choro]).sort((a,b) => a-b);
+  const q = p => vals[Math.min(vals.length-1, Math.floor(p*(vals.length-1)))];
+  breaks = [q(.2), q(.4), q(.6), q(.8), vals[vals.length-1]];
+  el.innerHTML = breaks.map((b,i) => { const from = i === 0 ? vals[0] : breaks[i-1] + 1;
+    return `<span><i class="sw" style="background:${RAMP[i]}"></i>${from >= b ? fmt(b) : fmt(from) + '–' + fmt(b)}</span>`; }).join('') + '<span>residents, Census 2020</span>';
+  el.hidden = false;
+}
+function restyle(){
+  for (const d of LAYERS){ const l = layers[d.id]; if (!l) continue; l.setStyle(d.id === 'subzones' ? subStyle : d.style);
+    const c = layers[d.id + '__casing']; if (c) c.setStyle(f => ({color:css('--surface'), weight:(d.style(f).weight||1.5) + 3, opacity:.9, dashArray:null})); }
+  buildLegend(); buildLayerList(); computeBreaks();
+}
+// ---- Map legend: only the layers that are on; categorical layers are broken down by class
+const luLabel = u => (LU.find(r => r[2](u || '')) || LU[LU.length-1])[0];
+function swSVG(d, f){
+  const s = d.style ? d.style(f || {properties:{}}) : {};
+  if (d.kind === 'point'){
+    const r = Math.min(7, s.radius || 5), cx = 9;
+    return `<svg width="18" height="16" aria-hidden="true"><circle cx="${cx}" cy="8" r="${r}" fill="${s.fillColor || 'none'}" fill-opacity="${s.fillOpacity ?? 1}" stroke="${s.color || 'none'}" stroke-width="${Math.min(3, s.weight || 1)}"/></svg>`;
+  }
+  if (d.kind === 'line'){
+    return `<svg width="22" height="12" aria-hidden="true"><line x1="1" y1="6" x2="21" y2="6" stroke="${s.color}" stroke-width="${Math.min(4, s.weight || 1.5)}" stroke-dasharray="${s.dashArray || ''}" stroke-opacity="${s.opacity ?? 1}"/></svg>`;
+  }
+  const fill = s.fill === false ? 'none' : (s.fillColor || 'none');
+  return `<svg width="18" height="14" aria-hidden="true"><rect x="1" y="1" width="16" height="12" rx="2" fill="${fill}" fill-opacity="${s.fillOpacity ?? .3}" stroke="${s.stroke === false ? 'none' : (s.color || 'none')}" stroke-width="${Math.min(2.5, s.weight || 1)}" stroke-dasharray="${s.dashArray || ''}"/></svg>`;
+}
+const row = (sw, label, n) => `<div class="lgrow">${sw}<span>${esc(label)}</span>${n != null ? `<span class="lgn">${fmt(n)}</span>` : ''}</div>`;
+function legendFor(d){
+  const head = `<div class="lghead">${esc(d.name)}</div>`;
+  if (d.id === 'landuse' && d.classes){
+    return head + LU.filter(([n]) => d.classes[n]).map(([n]) => row(swSVG(d, {properties:{land_use: (d.sample || {})[n]}}), n, d.classes[n])).join('');
+  }
+  if (d.id === 'subzones'){
+    let h = head + row(`<svg width="18" height="14" aria-hidden="true"><rect x="1" y="1" width="16" height="12" fill="none" stroke="${css('--ink')}" stroke-width="1.4" stroke-dasharray="4 3"/></svg>`, 'Subzone boundary');
+    if (state.choro && breaks.length){
+      const vals = subzones.map(f => f.properties[state.choro]).sort((a,b) => a-b);
+      const lab = document.querySelector('#choro option:checked').textContent;
+      h += `<div class="lgsub">${esc(lab)}</div>` + breaks.map((b,i) => { const from = i === 0 ? vals[0] : breaks[i-1] + 1;
+        return row(`<svg width="18" height="14" aria-hidden="true"><rect x="1" y="1" width="16" height="12" fill="${RAMP[i]}" stroke="${css('--line')}"/></svg>`, from >= b ? fmt(b) : fmt(from) + '–' + fmt(b)); }).join('');
+    }
+    return h;
+  }
+  const cats = {
+    railst: [['Existing', 'Existing station'], ['Planned', 'Planned station'], ['Existing + planned interchange', 'Existing, new interchange planned']],
+    cycnet: [['Planned', 'Planned'], ['Existing', 'Existing']],
+  }[d.id];
+  if (cats) return head + cats.map(([v, l]) => row(swSVG(d, {properties:{status:v}}), l)).join('');
+  if (d.id === 'sensors') return head + row(swSVG(d, {properties:{on_canal:true}}), 'On the canal') + row(swSVG(d, {properties:{on_canal:false}}), 'Outlet drain or road');
+  if (d.id === 'drosm') return head + [['canal','Canal'],['drain','Drain'],['stream','Stream']].map(([w,l]) => row(swSVG(d, {properties:{waterway:w}}), l)).join('');
+  return `<div class="lgrow solo">${swSVG(d)}<span>${esc(d.name)}</span></div>`;
+}
+let legendCtl;
+function buildLegend(){
+  if (!legendCtl){
+    legendCtl = L.control({position:'bottomright'});
+    legendCtl.onAdd = () => { const div = L.DomUtil.create('div', 'maplegend'); L.DomEvent.disableClickPropagation(div); L.DomEvent.disableScrollPropagation(div); return div; };
+    legendCtl.addTo(map);
+  }
+  const div = legendCtl.getContainer();
+  const on = ORDER.slice().reverse().map(id => LAYERS.find(x => x.id === id)).filter(d => d && d.on && d.count);
+  let open = true; try { open = localStorage.getItem('ulu-atlas-legend') !== 'closed'; } catch (e) {}
+  div.innerHTML = `<button type="button" class="lgtoggle" aria-expanded="${open}">Legend <span aria-hidden="true">${open ? '▾' : '▸'}</span></button>
+    <div class="lgbody" ${open ? '' : 'hidden'}>${on.length ? on.map(legendFor).join('') : '<div class="lgrow">No layers on</div>'}</div>`;
+  div.querySelector('.lgtoggle').addEventListener('click', () => { try { localStorage.setItem('ulu-atlas-legend', open ? 'closed' : 'open'); } catch (e) {} buildLegend(); });
+}
+function swatch(d){
+  if (d.sw === 'outline') return `<i class="sw" style="border:1.5px dashed ${css('--ink')}"></i>`;
+  const c = css(d.sw);
+  if (d.kind === 'point') return `<i class="sw dot" style="background:${c}"></i>`;
+  if (d.kind === 'line') return `<i class="sw line" style="background:${c}"></i>`;
+  return `<i class="sw" style="background:${c}"></i>`;
+}
+// Collapsible layer groups with an "all layers" switch; collapsed groups are remembered per viewer
+const COLLAPSE_KEY = 'ulu-atlas-collapsed';
+let collapsed;
+try { collapsed = new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY) || 'null') || []); } catch (e) { collapsed = null; }
+function saveCollapsed(){ try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...collapsed])); } catch (e) {} }
+function buildLayerList(){
+  const shown = LAYERS.filter(d => d.count !== 0);
+  const groups = [...new Set(shown.map(d => d.g))];
+  if (collapsed === null) collapsed = new Set(groups.filter(g => g !== 'Study area'));
+  document.getElementById('layerlist').innerHTML = groups.map((g, gi) => {
+    const items = shown.filter(d => d.g === g);
+    const nOn = items.filter(d => d.on).length;
+    const open = !collapsed.has(g);
+    return `<div class="group${open ? '' : ' closed'}">
+      <div class="ghead">
+        <button class="gtoggle" type="button" id="gt-${gi}" aria-expanded="${open}" aria-controls="gb-${gi}" data-g="${esc(g)}"><span class="chev" aria-hidden="true">▸</span>${esc(g)}<span class="gcount">${nOn}/${items.length}</span></button>
+        <label class="gall" for="ga-${gi}" title="Turn all layers in this group on or off"><input type="checkbox" id="ga-${gi}" data-g="${esc(g)}" ${nOn === items.length ? 'checked' : ''}><span>All</span></label>
+      </div>
+      <div class="gbody" id="gb-${gi}" ${open ? '' : 'hidden'}>${items.map(d =>
+        `<label class="lyr" for="ly-${d.id}"><input type="checkbox" id="ly-${d.id}" data-id="${d.id}" ${d.on ? 'checked' : ''}>${swatch(d)}<span class="name">${esc(d.name)}<span class="src">${esc(d.src)}</span></span><span class="n">${d.count ?? '…'}</span></label>`).join('')}</div>
+    </div>`;
+  }).join('');
+  groups.forEach((g, gi) => {
+    const items = shown.filter(d => d.g === g), nOn = items.filter(d => d.on).length;
+    document.getElementById('ga-' + gi).indeterminate = nOn > 0 && nOn < items.length;
+  });
+  document.querySelectorAll('#layerlist .lyr input').forEach(i => i.addEventListener('change', e => {
+    const d = LAYERS.find(x => x.id === e.target.dataset.id); d.on = e.target.checked; paint(); buildLayerList();
+  }));
+  document.querySelectorAll('#layerlist .gall input').forEach(i => i.addEventListener('change', e => {
+    const g = e.target.dataset.g; LAYERS.filter(d => d.g === g && d.count !== 0).forEach(d => { d.on = e.target.checked; });
+    paint(); buildLayerList();
+  }));
+  document.querySelectorAll('#layerlist .gtoggle').forEach(b => b.addEventListener('click', () => {
+    const g = b.dataset.g; if (collapsed.has(g)) collapsed.delete(g); else collapsed.add(g); saveCollapsed(); buildLayerList();
+    const again = [...document.querySelectorAll('#layerlist .gtoggle')].find(x => x.dataset.g === g); if (again) again.focus();
+  }));
+}
+function paint(){
+  Object.values(layers).forEach(l => { if (map.hasLayer(l)) map.removeLayer(l); });
+  ORDER.forEach(id => { const d = LAYERS.find(x => x.id === id), l = layers[id]; if (!(d && l && d.on && d.count)) return;
+    if (layers[id + '__casing']) layers[id + '__casing'].addTo(map);
+    l.addTo(map); });
+  if (legendCtl || Object.keys(layers).length) buildLegend();
+}
+
+const COLS = [['subzone','Subzone'],['planning_area','Planning area'],['pop_total','Residents'],['pop_0_14','0–14'],['pop_15_64','15–64'],['pop_65_plus','65+'],['hdb_total','HDB'],['condo','Condo'],['landed','Landed'],['pcn_m','Connector (m)']];
+function buildTable(){
+  const t = document.getElementById('tbl');
+  t.tHead.innerHTML = '<tr>' + COLS.map(([k,l]) => `<th scope="col" data-k="${k}" ${state.sort.k===k ? `aria-sort="${state.sort.dir<0?'descending':'ascending'}"` : ''}>${esc(l)}</th>`).join('') + '</tr>';
+  const rows = subzones.map(f => f.properties).sort((a,b) => { const k = state.sort.k, x = a[k], y = b[k];
+    return (typeof x === 'number' ? x - y : String(x).localeCompare(String(y))) * state.sort.dir; });
+  t.tBodies[0].innerHTML = rows.map(p => { const inR = state.reach === 'all' || p.reach === state.reach;
+    return `<tr data-s="${esc(p.subzone)}" class="${state.selected===p.subzone?'on':''} ${inR?'':'dim'}">` + COLS.map(([k]) => `<td>${typeof p[k]==='number' ? fmt(p[k]) : esc(p[k])}</td>`).join('') + '</tr>'; }).join('');
+  const vis = rows.filter(p => state.reach === 'all' || p.reach === state.reach);
+  const sum = k => vis.reduce((s,p) => s + (p[k]||0), 0);
+  t.tFoot.innerHTML = '<tr>' + COLS.map(([k],i) => `<td>${i===0 ? 'Total' : i===1 ? vis.length + ' subzones' : fmt(sum(k))}</td>`).join('') + '</tr>';
+  t.tHead.querySelectorAll('th').forEach(th => th.addEventListener('click', () => { const k = th.dataset.k;
+    state.sort = {k, dir: state.sort.k === k ? -state.sort.dir : (k==='subzone'||k==='planning_area' ? 1 : -1)}; buildTable(); }));
+  t.tBodies[0].querySelectorAll('tr').forEach(tr => tr.addEventListener('click', () => select(tr.dataset.s, true)));
+  document.getElementById('kpis').innerHTML = [[fmt(sum('pop_total')), 'residents (Census 2020)'], [fmt(sum('pop_65_plus')), 'aged 65 or over'], [fmt(sum('hdb_total')), 'live in HDB flats']]
+    .map(([v,l]) => `<div class="kpi"><b>${v}</b><small>${l}</small></div>`).join('');
+}
+function select(name, zoom){
+  state.selected = state.selected === name && !zoom ? null : name;
+  const f = subzones.find(x => x.properties.subzone === name), d = document.getElementById('detail');
+  if (state.selected && f){
+    const p = f.properties, pct = v => p.pop_total ? ` (${Math.round(v/p.pop_total*100)}%)` : '';
+    d.innerHTML = `<h3>${esc(p.subzone)}</h3><span class="tag">${esc(p.planning_area)} · ${esc(p.region)} · ${esc(p.reach)}</span>
+      <dl><dt>Residents</dt><dd>${fmt(p.pop_total)}</dd><dt>Aged 0–14</dt><dd>${fmt(p.pop_0_14)}${pct(p.pop_0_14)}</dd>
+      <dt>Aged 65+</dt><dd>${fmt(p.pop_65_plus)}${pct(p.pop_65_plus)}</dd><dt>HDB 1–2 room</dt><dd>${fmt(p.hdb_1_2rm)}</dd>
+      <dt>HDB 3 room</dt><dd>${fmt(p.hdb_3rm)}</dd><dt>HDB 4 room</dt><dd>${fmt(p.hdb_4rm)}</dd><dt>HDB 5 room and executive</dt><dd>${fmt(p.hdb_5rm_exec)}</dd>
+      <dt>Condominium and other apartments</dt><dd>${fmt(p.condo)}</dd><dt>Landed property</dt><dd>${fmt(p.landed)}</dd>
+      <dt>Area</dt><dd>${fmt(p.area_ha)} ha</dd><dt>Park connector inside</dt><dd>${fmt(p.pcn_m)} m</dd></dl>
+      <p class="note">Residents by the type of dwelling they live in. Percentages use the subzone's resident total.</p>`;
+    d.hidden = false;
+    if (zoom) map.fitBounds(L.geoJSON(f).getBounds(), {padding:[30,30], maxZoom:16});
+  } else d.hidden = true;
+  layers.subzones.setStyle(subStyle); buildTable();
+}
+
+async function load(){
+  const meta = await fetch('data/meta.json').then(r => r.json());
+  const [w,s,e,n] = meta.bounds, [W,S,E,N] = meta.extent;
+  map.fitBounds(L.latLngBounds([s,w],[n,e]), {padding:[6,6]});
+  const ext = L.latLngBounds([S,W],[N,E]);
+  // Free zoom (11-19) and panning anywhere in Singapore; detailed basemap tiles cover the study extent.
+  map.setMinZoom(11); map.setMaxZoom(19);
+  map.setMaxBounds(L.latLngBounds([1.12, 103.55], [1.50, 104.15]));
+  const data = await Promise.all(LAYERS.map(d => fetch('data/' + d.file).then(r => r.json()).catch(() => ({features:[]}))));
+  LAYERS.forEach((d, i) => {
+    const gj = data[i]; d.count = gj.features.length;
+    if (d.id === 'subzones') subzones = gj.features;
+    if (d.id === 'landuse'){ d.classes = {}; d.sample = {};
+      gj.features.forEach(f => { const k = luLabel(f.properties.land_use); d.classes[k] = (d.classes[k] || 0) + 1; d.sample[k] = d.sample[k] || f.properties.land_use; }); }
+    const opts = {style: d.id === 'subzones' ? subStyle : d.style,
+      onEachFeature: (f, l) => {
+        if (d.id === 'subzones'){ l.on('click', () => select(f.properties.subzone, false)); l.bindTooltip(f.properties.subzone, {sticky:true}); }
+        else l.bindPopup(() => popupHTML(d, f.properties), {maxWidth:300});
+      }};
+    const pane = paneOf(d); opts.pane = pane; opts.renderer = R[pane];
+    // Only point layers may draw markers; drop any stray point geometry elsewhere
+    if (d.kind !== 'point') opts.filter = f => !!f.geometry && !/Point/.test(f.geometry.type);
+    if (d.kind === 'point') opts.pointToLayer = (f, ll) => L.circleMarker(ll, Object.assign(d.style(f), {pane, renderer:R[pane]}));
+    layers[d.id] = L.geoJSON(gj, opts);
+    if (d.casing) layers[d.id + '__casing'] = L.geoJSON(gj, {pane, renderer:R[pane], interactive:false,
+      style:f => { const s = d.style(f); return {color:css('--surface'), weight:(s.weight||1.5) + 3, opacity:.9, dashArray:null, lineCap:'round'}; }});
+  });
+  paint(); buildLayerList(); buildLegend(); buildTable();
+}
+
+document.querySelectorAll('.reach .seg').forEach(b => b.addEventListener('click', () => {
+  state.reach = b.dataset.r;
+  document.querySelectorAll('.reach .seg').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  layers.subzones.setStyle(subStyle); buildTable();
+}));
+['left','right'].forEach(side => document.getElementById('tg-' + side).addEventListener('click', e => {
+  const app = document.getElementById('app'); const off = app.classList.toggle('no-' + side);
+  e.currentTarget.setAttribute('aria-pressed', String(!off)); setTimeout(() => map.invalidateSize(), 50);
+}));
+document.getElementById('choro').addEventListener('change', e => { state.choro = e.target.value; computeBreaks(); layers.subzones.setStyle(subStyle); buildLegend(); });
+new MutationObserver(restyle).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', restyle);
+load().catch(err => document.getElementById('map').insertAdjacentHTML('beforeend', `<p style="padding:16px">The data could not be loaded: ${esc(err.message)}</p>`));
+})();
+</script>
+
+</body>
+</html>
